@@ -1,0 +1,42 @@
+<svg class="ldi-lxcga5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><!--?xml version="1.0" encoding="utf-8"?--><!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)--><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="transform-origin: 50px 50px 0px;" xml:space="preserve"><g style="transform-origin: 50px 50px 0px;"><g style="transform-origin: 50px 50px 0px; transform: scale(0.6);"><g style="transform-origin: 50px 50px 0px;"><g><style type="text/css" class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -1s; animation-direction: normal;">.st0{fill:#F4E6C8;} .st1{opacity:0.8;fill:#849B87;} .st2{fill:#D65A62;} .st3{fill:#E15C64;} .st4{fill:#F47E5F;} .st5{fill:#F7B26A;} .st6{fill:#FEE8A2;} .st7{fill:#ACBD81;} .st8{fill:#F5E169;} .st9{fill:#F0AF6B;} .st10{fill:#EA7C60;} .st11{fill:#A8B980;} .st12{fill:#829985;} .st13{fill:#798AAE;} .st14{fill:#8672A7;} .st15{fill:#CC5960;} .st16{fill:#E17A5F;} .st17{fill:#849B87;} .st18{opacity:0.8;fill:#E15C64;} .st19{opacity:0.8;fill:#F7B26A;} .st20{fill:#79A5B5;} .st21{opacity:0.8;fill:#79A5B4;} .st22{fill:#666766;}</style><g style="transform-origin: 50px 50px 0px;"><g><g class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.928571s; animation-direction: normal;"><path class="st3" d="M50,92.5C26.6,92.5,7.5,73.4,7.5,50S26.6,7.5,50,7.5S92.5,26.6,92.5,50S73.4,92.5,50,92.5z M50,13.2 c-20.3,0-36.8,16.5-36.8,36.8S29.7,86.8,50,86.8S86.8,70.3,86.8,50S70.3,13.2,50,13.2z" fill="#ffffff" style="fill: rgb(255, 255, 255);"></path></g></g></g><g style="transform-origin: 50px 50px 0px;"><g><g class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.857143s; animation-direction: normal;"><path class="st4" d="M65.7,26.4c0.5-0.9,0.2-2-0.7-2.5s-2-0.2-2.5,0.6l-15,24c0,0.1-0.1,0.1-0.1,0.2C47,49.4,47,50.3,47.3,51 c0.2,0.6,0.7,1.1,1.2,1.4c0.2,0.1,0.3,0.2,0.5,0.2c1.3,0.4,2.8-0.2,3.5-1.5L65.7,26.4z" fill="#ffffff" style="fill: rgb(255, 255, 255);"></path></g></g></g><metadata xmlns:d="https://loading.io/stock/" class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.785714s; animation-direction: normal;">
+<d:name class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.714286s; animation-direction: normal;">clock</d:name>
+<d:tags class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.642857s; animation-direction: normal;">timer,time,countdown,hourglass,hour,minute,needle,circle,clock,spinner</d:tags>
+<d:license class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.571429s; animation-direction: normal;">cc-by</d:license>
+<d:slug class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.5s; animation-direction: normal;">lxcga5</d:slug>
+</metadata></g></g></g></g><style type="text/css" class="ld ld-spin" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.428571s; animation-direction: normal;">@keyframes ld-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ld-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.ld.ld-spin {
+  -webkit-animation: ld-spin 1s infinite;
+  animation: ld-spin 1s infinite;
+}
+</style></svg></svg>

@@ -1,0 +1,9 @@
+lastUpgrade=00964
+proj.pluginVersion=0.9.64
+proj.AppId=947796542721
+and.BundleId=com.hiddenchickengames.slovniduel
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIds
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--%0d%0aGoogle+Play+game+services+IDs.%0d%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0d%0a--%3e%0d%0a%3cresources%3e%0d%0a+%3c%21--+app_id+--%3e%0d%0a+%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e947796542721%3c%2fstring%3e%0d%0a+%3c%21--+package_name+--%3e%0d%0a+%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.hiddenchickengames.slovniduel%3c%2fstring%3e%0d%0a+%3c%21--+achievement+V%c3%adtej+--%3e%0d%0a+%3cstring+name%3d%22achievement_vtej%22+translatable%3d%22false%22%3eCgkIgYrO6MobEAIQAg%3c%2fstring%3e%0d%0a+%3c%21--+achievement+Prvn%c3%ad+v%c3%bdhra%21+--%3e%0d%0a+%3cstring+name%3d%22achievement_prvn_vhra%22+translatable%3d%22false%22%3eCgkIgYrO6MobEAIQAw%3c%2fstring%3e%0d%0a+%3c%21--+achievement+N%c3%a9+v%c5%bedy+se+da%c5%99%c3%ad%21+--%3e%0d%0a+%3cstring+name%3d%22achievement_n_vdy_se_da%22+translatable%3d%22false%22%3eCgkIgYrO6MobEAIQBA%3c%2fstring%3e%0d%0a+%3c%21--+achievement+Jsme+si+rovni+--%3e%0d%0a+%3cstring+name%3d%22achievement_jsme_si_rovni%22+translatable%3d%22false%22%3eCgkIgYrO6MobEAIQBQ%3c%2fstring%3e%0d%0a%3c%2fresources%3e
+and.ClientId=947796542721-40eelrc434pspk56ppaclu76rbfj1sm2.apps.googleusercontent.com
+android.SetupDone=true
