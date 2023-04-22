@@ -51,10 +51,7 @@ class Auth{
 			"login_type" : this.type,
 			"auth_token" : this.token,
 			"user_id" : this.userID
-		};
-		
-		console.log(req);
-		
+		};		
 		var reqURL = this.serverURL + '/?json=' + JSON.stringify(req);
 		console.log(reqURL);
 		

@@ -5,7 +5,7 @@ const WebSocket = require('ws');
 const Game = require('./Game.js');
 
 const server = http.createServer();
-
+const SERVER_PORT = process.env.PORT || 5001;
 const wss = new WebSocket.Server({ server:server, clientTracking:true });
 var game = new Game();
 game.onServerStart();
@@ -49,6 +49,8 @@ wss.on('connection', function connection (conn){
 			game.onClose(connD);
 		});
 		conn.on('message', function message(str){
+			str = str.toString();
+
 			var now = new Date();
 			var timestamp = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 			console.log("SERVER RECV("+timestamp+"): " + str);
@@ -66,5 +68,6 @@ const interval = setInterval(function ping() {
   });
 }, 5 * 60000);
 
-server.listen(5001)
+server.listen(SERVER_PORT)
+console.log(`Server started on port ${SERVER_PORT}`);
 
