@@ -3,12 +3,8 @@ const Auth = require('./Auth.js');
 const HCServer = require('./HCServer.js');
 const RoomManager = require('./RoomManager.js');
 
-const authServerURL = "https://gate.hiddenchicken.com";
-const authServerSecret = "gm7fm37g1h876ik87468ui7pzui68z7e68fas6d4axcv5724D";
-const gameName = "SLOVNI_DUEL";
-
 class Game{
-	constructor(){
+	constructor(authServerURL, authServerSecret, gameName){
 		this.hcServer = new HCServer(authServerURL, authServerSecret, gameName);
 		
 		this.rm = new RoomManager();
@@ -22,6 +18,7 @@ class Game{
 		this.pongMessageStr = "{'action':'PONG'}";
 
 		this.roomTimeouts = [];
+		this.authServerURL = authServerURL;
 	}
 
 	onConnection(conn){
@@ -82,7 +79,7 @@ class Game{
 				conn.SERVER_PLAYER = player;
 				conn.SERVER_LOGGED = false;
 				
-				var auth = new Auth(authServerURL, json_data.login_type, gameName, json_data.uuid, json_data.nick, json_data.token);
+				var auth = new Auth(this.authServerURL, json_data.login_type, gameName, json_data.uuid, json_data.nick, json_data.token);
 				player.setAuth(auth);
 				var that = this;			
 				auth.asyncAuth(function(){

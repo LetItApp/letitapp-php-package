@@ -4,10 +4,14 @@ const http = require('http');
 const WebSocket = require('ws');
 const Game = require('./Game.js');
 
+const authServerURL = process.env.AUTHSERVER_URL || "https://gate.hiddenchicken.com";
+const authServerSecret = process.env.AUTHSERVER_KEY || "gm7fm37g1h876ik87468ui7pzui68z7e68fas6d4axcv5724D";
+const gameName = process.env.GAME || "SLOVNI_DUEL";
+
 const server = http.createServer();
 const SERVER_PORT = process.env.PORT || 5001;
 const wss = new WebSocket.Server({ server:server, clientTracking:true });
-var game = new Game();
+var game = new Game(authServerURL, authServerSecret, gameName);
 game.onServerStart();
 
 function noop() {}
