@@ -1,0 +1,22 @@
+{
+    "name": "letitapp/letitapp-php-api",
+    "type": "library",
+    "license": "MIT",
+    "description": "LetItApp PHP API Library",
+    "keywords": ["letitapp", "api", "notifications"],
+    "homepage": "https://github.com/LetItApp/letitapp-php-package",
+    "authors": [
+        {
+            "name": "Daniel Papik",
+            "email": "app@letitapp.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LetItApp\\": "src/LetItApp/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    }
+}
