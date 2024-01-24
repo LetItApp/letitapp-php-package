@@ -25,6 +25,14 @@ $letItAppAPI = new LetItAppAPI($apiKey);
 
 For detailed information on how to use the library and available API endpoints, refer to our [Apiary Documentation](https://letitapp.docs.apiary.io/).
 
+## Installation with Composer
+
+You can install the LetItApp PHP API Library using Composer. Run the following command in your project's root directory:
+```bash
+composer require letitapp/letitapp-php-api
+```
+
+
 ## Issues and Contributions
 
 If you encounter any issues or have suggestions for improvement, please feel free to open an issue. Contributions are always welcome!
