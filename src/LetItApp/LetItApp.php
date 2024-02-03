@@ -2,7 +2,7 @@
 
 
 /**
- * PHP knihovna pro přístup k API
+ * PHP library for accessing the API
  *
  * @author Daniel Papik <app@letitapp.com>
  * @version 1.0
@@ -18,12 +18,12 @@ class LetItAppAPI {
     }
 
      /**
-     * Odesílá HTTP požadavek na API.
+     * Sends an HTTP request to the API.
      *
-     * @param string $method HTTP metoda (GET, POST, PUT, DELETE)
-     * @param string $endpoint API koncový bod
-     * @param array $data Data pro POST nebo PUT požadavky
-     * @return array Odpověď API včetně statusu a dat
+     * @param string $method HTTP method (GET, POST, PUT, DELETE)
+     * @param string $endpoint API endpoint
+     * @param array $data Data for POST or PUT requests
+     * @return array API response including status and data
      */
     private function sendRequest(string $method, string $endpoint, array $data = []): array {
         $url = $this->apiUrl . $endpoint;
@@ -54,9 +54,9 @@ class LetItAppAPI {
     }
 
       /**
-     * Získá seznam notifikací.
+     * Creates or updates a notification.
      *
-     * @return array Odpověď API včetně statusu a dat
+     * @return array API response including status and data
      */
     public function createOrUpdateNotification(Notification $notification): array {
         $data = $notification->getData();
@@ -64,60 +64,60 @@ class LetItAppAPI {
     }
 
      /**
-     * Získá detail notifikace podle ID.
+     * Deletes a notification
      *
-     * @param int $id ID notifikace
-     * @return array Odpověď API včetně statusu a dat
+     * @param int $id Notification ID
+     * @return array API response including status and data
      */
     public function deleteNotification(int $id): array {
         return $this->sendRequest('DELETE', 'delete/' . $id);
     }
 
     /**
-     * Vytvoří nebo aktualizuje notifikaci.
+     * Gets the details of a notification by ID.
      *
-     * @param array $data Data pro vytvoření nebo aktualizaci notifikace
-     * @return array Odpověď API včetně statusu a dat
+     * @param array $data Data for creating or updating a notification
+     * @return array API response including status and data
      */
     public function getNotification(int $id): array {
         return $this->sendRequest('GET', 'show/' . $id);
     }
 
     /**
-     * Smaže notifikaci podle ID.
+     * Gets a list of notifications.
      *
-     * @param int $id ID notifikace
-     * @return array Odpověď API včetně statusu a dat
+     * @param int $id Notification ID
+     * @return array API response including status and data
      */
     public function getList(): array {
         return $this->sendRequest('GET', 'list');
     }
 
     /**
-     * Odešle notifikaci okamžitě.
+     * Sends a notification immediately.
      *
-     * @param int $id ID notifikace
-     * @return array Odpověď API včetně statusu a dat
+     * @param int $id Notification ID
+     * @return array API response including status and data
      */
     public function sendNotification(int $id): array {
         return $this->sendRequest('POST', 'send/' . $id);
     }
 
     /**
-     * Získá informace o chybě v odpovědi API.
+     * Gets information about an error in the API response.
      *
-     * @param array $response Odpověď API
-     * @return string|null Text chyby nebo null, pokud chyba není k dispozici
+     * @param array $response API response
+     * @return string|null Error message or null if error is not available
      */
     public function getErrorMessage(array $response): ?string {
         return $response['response']['error'] ?? null;
     }
 
     /**
-     * Získá status odpovědi API.
+     * Gets the status of the API response.
      *
-     * @param array $response Odpověď API
-     * @return int Status odpovědi
+     * @param array $response API response
+     * @return int Response status
      */
     public function getResponseStatus(array $response): int {
         return $response['status'] ?? 0;
